@@ -20,8 +20,8 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 DEVICE_RESOLUTION := 720x1280
 TW_THEME := portrait_hdpi
 
-# Inherit AOSP leo device parts
-$(call inherit-product, device/sony/leo/aosp_d5803.mk)
+# Inherit AOSP aries device parts
+$(call inherit-product, device/sony/aries/aosp_d5803.mk)
 
 # Inherit Omni GSM telephony parts
 $(call inherit-product, device/sony/common/radio.mk)
