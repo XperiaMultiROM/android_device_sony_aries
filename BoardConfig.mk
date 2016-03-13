@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano/PlatformConfig.mk
+include device/sony/shinano-common/PlatformConfigOmni.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D5803
 
@@ -25,3 +25,9 @@ BOARD_KERNEL_CMDLINE += mem=1756M
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/aries/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+TARGET_RECOVERY_IS_MULTIROM := true
+MR_DPI := hdpi
+MR_DPI_FONT := 216
+MR_KEXEC_MEM_MIN := 0x0ff00000
+MR_DEVICE_VARIANTS := z3c
