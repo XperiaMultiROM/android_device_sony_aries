@@ -29,5 +29,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_DPI := hdpi
 MR_DPI_FONT := 216
-MR_KEXEC_MEM_MIN := 0x0ff00000
 MR_DEVICE_VARIANTS := z3c
